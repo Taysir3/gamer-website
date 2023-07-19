@@ -2,6 +2,11 @@
     font-family: Work Sans;
 }
 
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 header {
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
@@ -59,11 +64,13 @@ header {
 
 .btn {
     gap: 1rem;
+    cursor: pointer;
 }
 
 .follow-us {
-    padding: 8px 16px;
-
+    padding: 4px 16px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
 }
 
 .follow-us h3 {
@@ -71,10 +78,63 @@ header {
     font-weight: 600;
 }
 
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.title-section {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.goat-design {
+    font-size: 6rem;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0px;
+    margin-bottom: 24px;
+}
+
+.btn-banner {
+    display: flex;
+    gap: 24px;
+    margin-top: 60px;
+}
+
+.button {
+    padding: 20px 40px;
+    border: none;
+    border-radius: 48px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.sign-in {
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+}
+
+.go-rogue {
+    background: #4EC5F7;
+}
+
 @media screen and (max-width:576px) {
-    .nav, .menu-right, .menu-right ul{
+
+    .nav,
+    .menu-right,
+    .menu-right ul {
         flex-direction: column;
     }
+
     header {
         justify-content: center;
         padding: 150px auto;
