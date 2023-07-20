@@ -263,10 +263,9 @@ header {
     flex-wrap: wrap;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     gap: 30px;
-    padding: 300px 0px;
+    padding: 200px 0px;
     text-align: center;
     justify-content: center;
-    margin: 80px 0px;
 }
 
 .tag:hover {
@@ -333,7 +332,11 @@ footer {
     gap: 60px;
 }
 
-footer .logo, .extra-labels, .copyright, .social-icons, .link-div {
+footer .logo,
+.extra-labels,
+.copyright,
+.social-icons,
+.link-div {
     justify-content: center;
     margin-bottom: 30px;
 }
@@ -367,13 +370,16 @@ footer .logo, .extra-labels, .copyright, .social-icons, .link-div {
         padding: 30px 60px;
         width: auto;
     }
+
     .we-are-gamer {
         flex-direction: column;
         text-align: center;
     }
+
     .wag-image-container {
         width: 80%;
     }
+
     .video-thumbnail {
         flex-direction: column;
         align-items: center;
@@ -385,31 +391,71 @@ footer .logo, .extra-labels, .copyright, .social-icons, .link-div {
         gap: 20px;
     }
 
-    .man-with-gun-image{
+    .man-with-gun-image {
         width: 80%;
     }
 
     .pi-image {
         width: 80%;
     }
-    
+
     .game-tag {
         margin: 0px;
     }
 
-    .link-div, .social-icons, .extra-labels {
+    .link-div,
+    .social-icons,
+    .extra-labels {
         flex-wrap: wrap;
     }
+
     .thumbnail-div {
         justify-content: center;
     }
+
     .banner-img-class {
         width: 100%;
     }
+
     .over-image {
         position: relative;
     }
+
     .over-image img {
         width: 50%;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .banner {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner img {
+        width: 80%;
+    }
+    .banner-content {
+        align-items: center;
+    }
+
+    .we-are-gamer {
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+    }
+
+    .video {
+        align-items: center;
+    }
+
+    .video-thumbnail {
+        flex-wrap: wrap;
+        width: 80%;
+        margin-left: 80px;
+    }
+    .play-instant {
+        flex-direction: column;
+        gap: 60px;
     }
 }
