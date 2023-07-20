@@ -7,6 +7,13 @@ main {
     margin: 0 auto;
 }
 
+.section-description {
+    color: #534C64;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
 /* Header Desingn */
 
 header {
@@ -88,7 +95,7 @@ header {
 
 .banner {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     /* padding: 20px; */
 }
@@ -137,6 +144,7 @@ header {
     font-weight: 600;
     text-transform: uppercase;
     color: #FFF;
+    cursor: pointer;
 }
 
 .sign-in {
@@ -145,6 +153,78 @@ header {
 
 .go-rogue {
     background: #4EC5F7;
+}
+
+/* Video Section */
+
+.video {
+    margin: 120px auto;
+}
+
+.video-text-content {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.funny-video {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.video-name {
+    width: 342px;
+}
+
+.video-thumbnail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-name {
+    color: #534C64;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* We are Gamer Section */
+
+.we-are-gamer {
+    display: flex;
+    align-items: center;
+    gap: 52px;
+    margin: 100px auto;
+    text-align: right;
+}
+
+.wag-image {
+    width: 100%;
+}
+
+.wag-text-content h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.our-purpose {
+    color: #534C64;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 36px;
+}
+
+.unlease-the-gamer {
+    color: #534C64;
+    text-align: right;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 8px;
+    width: 100%;
 }
 
 @media screen and (max-width:576px) {
@@ -159,7 +239,7 @@ header {
         justify-content: center;
         padding: 150px auto;
         margin-bottom: 80px;
-        box-shadow:none;
+        box-shadow: none;
     }
 
     .banner {
