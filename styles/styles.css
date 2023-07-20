@@ -97,7 +97,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 20px; */
 }
 
 .banner-img {
@@ -220,7 +219,6 @@ header {
 
 .unlease-the-gamer {
     color: #534C64;
-    text-align: right;
     font-size: 1.8rem;
     font-weight: 700;
     margin-top: 8px;
@@ -242,9 +240,9 @@ header {
 }
 
 .over-image {
-    position: absolute;
-    right: 800px;
-    bottom: -2100px;
+    position: relative;
+    bottom: 200px;
+    right: 100px;
 }
 
 /* Tags Section */
@@ -358,14 +356,60 @@ footer .logo, .extra-labels, .copyright, .social-icons, .link-div {
     .banner {
         flex-direction: column-reverse;
         gap: 20px;
+        align-items: center;
     }
 
     .banner img {
-        width: 100%;
+        width: 80%;
     }
 
     .banner-content {
         padding: 30px 60px;
         width: auto;
+    }
+    .we-are-gamer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .wag-image-container {
+        width: 80%;
+    }
+    .video-thumbnail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .play-instant {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .man-with-gun-image{
+        width: 80%;
+    }
+
+    .pi-image {
+        width: 80%;
+    }
+    
+    .game-tag {
+        margin: 0px;
+    }
+
+    .link-div, .social-icons, .extra-labels {
+        flex-wrap: wrap;
+    }
+    .thumbnail-div {
+        justify-content: center;
+    }
+    .banner-img-class {
+        width: 100%;
+    }
+    .over-image {
+        position: relative;
+    }
+    .over-image img {
+        width: 50%;
     }
 }
